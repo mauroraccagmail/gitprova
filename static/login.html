@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JWT</title>
+	<link rel="icon" href="img/icoVallauri.png" type="image/png" />
+	<link rel="stylesheet" href="fontawesome-free-5.11.2/css/all.css">
+    <link rel="stylesheet" href="bootstrap-4.2.1/css/bootstrap.min.css">
+
+    <script type="text/javascript" src="bootstrap-4.2.1/jquery/jquery.js"></script>
+    <script type="text/javascript" src="bootstrap-4.2.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="libreria.js"></script>
+    <script type="text/javascript" src="login.js"></script>
+	
+	<style>
+		.input-group-addon{
+			width:38px; 
+			height:38px;
+			text-align:center;
+			line-height:38px;
+			background-color:#EEE;
+			border-radius: 5px 0 0 5px;
+			border: 1px solid #ccc;
+			border-right:0;
+		}
+		.titolo{
+			font-size:15pt;
+			font-weight:bold;
+		}
+	</style>
+</head>
+
+<body>
+<div class="container-fluid" id="loginForm">
+	<!-- JUMBOTRON -->
+	<div class="row" style="margin-top:8%">
+		<div class="col-sm-4"></div>
+		<div class="col-sm-4"> 
+			<div class="jumbotron" data-toggle="collapse" data-target="#login"  >
+				<p class="text-center">
+					<img src="img/img.jpg" width="120" class="rounded-circle" > 
+				</p>
+				<p class="text-center titolo">IIS Vallauri - Fossano</p>
+			</div>
+		</div>
+		<div class="col-sm-4"></div>
+	</div>
+	<!-- FINE JUMBOTRON -->
+	
+	<div class="collapse" id="login">   	
+	<div class="row" >
+		<div class="col-sm-4"></div>
+		<div class="col-sm-4">			
+				<form id="form1"  >
+				    <!-- username -->
+					<div class="input-group form-group">
+						<span class="input-group-addon">
+							<i class="fas fa-user"> </i>
+						</span>
+						<input class="form-control" type="text" placeholder="Username" name="username">
+					</div>
+					<!-- password -->
+					<div class="input-group form-group">
+						<span class="input-group-addon">
+							<i class="fas fa-lock"> </i>
+						</span>
+						<input class="form-control" type="password" placeholder="Password" name="password">
+					</div>
+					<div class="msg"> </div>
+
+					<!-- INVIA -->
+					<div class="form-group">
+						<button type="button" class="btn btn-secondary form-control" id="btnLogin">
+							LOGIN
+						</button>	
+						<button type="button" class="btn btn-link form-control" style="height:20px; text-align:left;">
+							registrati  
+						</button>	
+						<button type="button" class="btn btn-link form-control" style="height:20px; text-align:left;">
+							Hai dimenticato la password?  
+						</button>								
+					</div>					
+				</form>
+		</div>	
+		<div class="col-sm-4"></div>
+	</div>		
+	</div>   <!-- class='collaps' -->	
+</div>  
+		
+</body>
+</html>
